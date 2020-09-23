@@ -1,0 +1,288 @@
+ *{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+/*	NavBar */
+ .myNav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 15vh;
+	max-height: 20vh;
+	background-color: #BADCAD;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+ .uLinks{
+	width:65%;
+	text-align: right;
+	z-index: 99999999;
+}
+ .uLinksList{
+	list-style: none;
+	display: inline;
+	padding:2%;
+
+}
+ .uLinksListElement{
+	text-decoration: none;
+	color:black;
+	font-size:14px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+/*	Logo */
+
+.companyName{
+	letter-spacing: 3px;
+	color:#008037;
+	font-size:22px;
+}
+.logoBox{
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	align-items: left;
+	width: 30%;
+	max-height: 20vh;
+}
+
+.logo{
+	width:75px;
+	height: 75px;
+}
+
+/*	Toggle button */
+.burger div{
+	width: 30px;
+	height:3px;
+	background-color:black;
+	margin:5px;
+}
+.burger{
+	display: none;
+}
+
+/*	Responsive NavBar */
+@media screen and (max-width: 1100px){
+.companyName{
+	letter-spacing: 2px;
+	color:#008037;
+	font-size:18px;
+}
+
+}
+
+@media screen and (max-width: 1000px){
+	 .uLinks{
+		position: absolute;
+		right:0px;
+		height: 110%;
+		top:15vh;
+		background-color: #BADCAD;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-top :1px solid rgba(0,0,0,.5);
+
+	}
+
+	.uLinksList{
+		width: 100%;
+		border-bottom :1px solid rgba(0,0,0,.5);
+		padding-bottom: 10%;
+		padding-top: 10%;
+		text-align: center;
+	}
+	.burger{
+		display: block;
+		width:10%;
+	}
+	.uLinks{
+		display:none;
+	}
+	.uLinks.active{
+		display:flex;
+	}
+	.logoBox{
+		width: 85%;
+	}
+
+}
+
+
+/* CONTENU */
+#con{
+	background-color:#ECE7DF;
+	min-height: 70%;
+}
+.contenu{
+	
+	padding:2%;
+	padding-left:5%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.title{
+	padding:1%;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size:36px;
+}
+.button {
+  background-color:#FFDE59;
+  /*  #FF914D */
+  border-radius: 10px;
+  border: black solid 1px;
+  padding: 6px 9px;
+  text-align: center;
+  text-decoration: none;
+  margin-right:30px;
+  color:black;
+  font-size:12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.treeImage{
+	width: 90%;
+	height: 100%;
+	align-content: center;
+	vertical-align: middle;
+
+}
+
+.imgArbresContainer{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.imgContainer{
+	position:relative;
+}
+
+/* Text Hover */
+
+
+.textHover{
+	position: absolute;
+	overflow: hidden;
+	background-color: white;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	width:430px;
+	height: 300px;
+	opacity: 0;
+	font-weight: bold;
+	text-align: center;	
+}
+
+.textHover h4{
+	position: absolute;
+	top:40%;
+	width: 100%;
+	color: black;
+	vertical-align: middle;
+	letter-spacing: 4px;
+	font-weight: bold;
+	font-size:30px;
+}
+
+.textHover p{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	color: black;
+	vertical-align: middle;
+	letter-spacing: 2px;
+	font-size:14px;
+	padding:5%;	
+}
+
+.imgContainer:hover .textHover{
+	opacity: 0.8;
+}
+
+.contenu h3{
+	font-weight: normal;
+	letter-spacing: 2px;
+	padding-left:2%;
+	font-size: 24px;
+}
+
+
+
+
+
+/* Responsive Grid*/
+@media screen and (max-width: 800px){
+	.imgArbresContainer{
+		grid-template-columns: auto;
+	}
+	
+}
+
+
+
+/* PIED*/
+.pied{
+	background-color:#153A2D;
+	height:150px;
+	color:#AACC9C;
+	padding:4%;
+	font-size:20px;
+	letter-spacing: 2px;
+}
+
+
+/* TREE DESCRIPTIONS*/
+.cont{
+	padding:5%;
+	padding-left:7%;
+	padding-right:7%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+}
+
+.description{
+	padding-left:15%;
+	padding-right:10%;
+}
+.description li{
+	padding-bottom: 5px;
+	padding-top: 6px;
+}
+.prix{
+	font-size: 16px;
+	padding-bottom: 27px;
+}
+.imageDescriptionBox{
+	text-align: center;
+}
+
+.photoDescription{
+	width:100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media screen and (max-width: 800px){
+	.cont{
+		grid-template-columns: 100%;
+	}	
+}
+
+/* Secondary theme*/
+
+.secondTheme{
+	color:white;
+}
